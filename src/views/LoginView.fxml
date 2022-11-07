@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="533.0" prefWidth="566.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
+    <stylesheets>
+        <URL value="@/css/style.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="204.0" prefWidth="566.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <VBox alignment="CENTER" layoutY="-2.0" prefHeight="190.0" prefWidth="566.0" spacing="5.0">
+               <children>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../src/icons/finanzas.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="¿Qué perfil quieres usar?">
+                     <font>
+                        <Font name="System Bold" size="31.0" />
+                     </font>
+                  </Label>
+                  <Text fill="#434242" strokeType="OUTSIDE" strokeWidth="0.0" text="Nunca serás rico si tus gastos exceden a tus ingresos; y nunca serás pobre si tus ingresos superan a tus gastos" textAlignment="CENTER" wrappingWidth="565.3251953125">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane layoutY="205.0" prefHeight="330.0" prefWidth="566.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="1.0" layoutY="11.0" prefHeight="320.0" prefWidth="566.0" spacing="50.0">
+               <children>
+                  <Pane prefHeight="307.0" prefWidth="215.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="317.0" prefWidth="215.0" spacing="10.0">
+                           <children>
+                              <Label fx:id="lb_NombreUno" text="Cristian Montenegro" />
+                              <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../src/icons/laptop%20(1).png" />
+                                 </image>
+                              </ImageView>
+                              <TextField fx:id="txt_CorreoUno" promptText="Correo" text="camdlc.uk@gmail.com" />
+                              <PasswordField fx:id="txt_PassworUno" prefHeight="26.0" prefWidth="127.0" promptText="Contraseña" text="mercedes91" />
+                              <CheckBox fx:id="checkB_RecuerdameUno" alignment="BOTTOM_LEFT" contentDisplay="BOTTOM" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="15.0" prefWidth="228.0" text="Recuerdame" />
+                              <Button fx:id="btn_Entrar" mnemonicParsing="false" onAction="#ingresar" prefHeight="26.0" prefWidth="123.0" text="Entrar" />
+                              <Label onMouseClicked="#modificar" text="Modificar" textAlignment="RIGHT" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="186.0" layoutY="10.0" prefHeight="307.0" prefWidth="215.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="317.0" prefWidth="215.0" spacing="10.0">
+                           <children>
+                              <Label fx:id="lb_NombreDos" text="Patricia Miró" />
+                              <ImageView fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../src/icons/laptop.png" />
+                                 </image>
+                              </ImageView>
+                              <TextField fx:id="txt_CorreoDos" promptText="Correo" />
+                              <PasswordField fx:id="txt_PassworUno1" prefHeight="26.0" prefWidth="127.0" promptText="Contraseña" />
+                              <CheckBox fx:id="checkB_RecuerdameUno" alignment="BOTTOM_LEFT" contentDisplay="BOTTOM" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="15.0" prefWidth="228.0" text="Recuerdame" />
+                              <Button mnemonicParsing="false" onAction="#ingresar" prefHeight="26.0" prefWidth="123.0" text="Entrar" />
+                              <Label onMouseClicked="#modificar" text="Modificar" textAlignment="RIGHT" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
